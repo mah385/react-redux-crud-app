@@ -153,7 +153,7 @@ class AddNewMobile extends Component {
 
             <div className="my-4 text-center">
               <button type="submit" className="btn btn-sm btn-outline-success">
-                Submit
+                Add
               </button>
             </div>
           </form>
