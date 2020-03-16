@@ -27,7 +27,7 @@ export const listOfMobiles = [
     camera: "13 MP",
     battery: "5000 mAh",
     display: "6.4 inches",
-    ram: "3-6 GB"
+    ram: "3/6 GB"
   },
   {
     id: "de97c63e-405d-4d57-bee5-283d389af21d",
@@ -47,6 +47,56 @@ export const listOfMobiles = [
     camera: "64 MP",
     battery: "4000 mAh",
     display: "6.2 inches",
+    ram: "8 GB"
+  },
+  {
+    id: "673bc162-e182-4b30-9185-b501a6fc6deb",
+    brand: "OnePlus",
+    model: "7",
+    storage: "128GB/256GB",
+    camera: "48 MP",
+    battery: "3700 mAh",
+    display: "6.41 inches",
+    ram: "6/8 GB"
+  },
+  {
+    id: "b200c6c8-be47-428d-83b5-b6fcb1d61455",
+    brand: "OnePlus",
+    model: "7 Pro",
+    storage: "128GB/256GB",
+    camera: "48 MP",
+    battery: "4000 mAh",
+    display: "6.67 inches",
+    ram: "6/12 GB"
+  },
+  {
+    id: "45073690-8798-4b27-b764-98a0cb66217e",
+    brand: "Xiaomi",
+    model: "Redmi Note 8 Pro",
+    storage: "64GB/128GB/256GB",
+    camera: "64 MP",
+    battery: "4500 mAh",
+    display: "6.53 inches",
+    ram: "6/8 GB"
+  },
+  {
+    id: "e56b5408-0452-4565-8cb6-a82dbab3b991",
+    brand: "Xiaomi",
+    model: "Redmi Note 9 Pro Max",
+    storage: "64GB/128GB",
+    camera: "64 MP",
+    battery: "5020 mAh",
+    display: "6.67 inches",
+    ram: "6/8 GB"
+  },
+  {
+    id: "77524cbf-dc39-4dca-8f30-e9fcc260a7fc",
+    brand: "Huawei",
+    model: "Mate 30 Pro 5G",
+    storage: "128GB/256GB/512GB",
+    camera: "40 MP",
+    battery: "4500 mAh",
+    display: "6.53 inches",
     ram: "8 GB"
   }
 ];
