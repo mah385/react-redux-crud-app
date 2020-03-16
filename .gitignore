@@ -5,6 +5,9 @@
 /.pnp
 .pnp.js
 
+### JetBrains WebStorm ###
+.idea
+
 # testing
 /coverage
 

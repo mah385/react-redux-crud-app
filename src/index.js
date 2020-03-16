@@ -1,5 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import "bootstrap/dist/css/bootstrap.css";
+import "./assets/fontawesome-free-5.12.1-web/css/all.css";
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
