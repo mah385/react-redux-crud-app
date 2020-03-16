@@ -1,18 +1,17 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import { addNewMobileInRedux } from "../../actions/mobileActions";
-import { v4 as UUIDv4 } from "uuid";
+import { updateExistingMobileInRedux } from "../../actions/mobileActions";
 
-class AddNewMobile extends Component {
+class UpdateMobile extends Component {
   state = {
-    id: "",
-    brand: "",
-    model: "",
-    storage: "",
-    camera: "",
-    battery: "",
-    display: "",
-    ram: ""
+    id: this.props.existingMobile.id,
+    brand: this.props.existingMobile.brand,
+    model: this.props.existingMobile.model,
+    storage: this.props.existingMobile.storage,
+    camera: this.props.existingMobile.camera,
+    battery: this.props.existingMobile.battery,
+    display: this.props.existingMobile.display,
+    ram: this.props.existingMobile.ram
   };
 
   handleStateOnChange = event => {
@@ -21,9 +20,18 @@ class AddNewMobile extends Component {
 
   handleFormOnSubmit = event => {
     event.preventDefault();
-    const { brand, model, storage, camera, battery, display, ram } = this.state;
-    const newMobile = {
-      id: UUIDv4(),
+    const {
+      id,
+      brand,
+      model,
+      storage,
+      camera,
+      battery,
+      display,
+      ram
+    } = this.state;
+    const updatedExistingMobile = {
+      id: id,
       brand: brand,
       model: model,
       storage: storage,
@@ -32,14 +40,17 @@ class AddNewMobile extends Component {
       display: display,
       ram: ram
     };
-    this.props.addNewMobileInRedux(newMobile, this.props.history);
+    this.props.updateExistingMobileInRedux(
+      updatedExistingMobile,
+      this.props.history
+    );
   };
 
   render() {
     return (
       <div className="m-4">
         <div className="border border-primary bg-light rounded w-50 m-auto text-success">
-          <h3 className="m-4 text-center">MOBILE DETAILS</h3>
+          <h4 className="m-4 text-center">MOBILE DETAILS</h4>
           <form
             className="text-right"
             onSubmit={event => {
@@ -165,8 +176,10 @@ class AddNewMobile extends Component {
 
 const mapStateToProps = state => {
   return {
-    singleMobile: state.useMobileReducer.singleMobile
+    existingMobile: state.useMobileReducer.singleMobile
   };
 };
 
-export default connect(mapStateToProps, { addNewMobileInRedux })(AddNewMobile);
+export default connect(mapStateToProps, { updateExistingMobileInRedux })(
+  UpdateMobile
+);

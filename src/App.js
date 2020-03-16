@@ -13,6 +13,7 @@ import Welcome from "./components/layout/Welcome";
 import Home from "./components/layout/Home";
 import AddNewMobile from "./components/mobile/AddNewMobile";
 import ShowAllMobiles from "./components/mobile/ShowAllMobiles";
+import UpdateMobile from "./components/mobile/UpdateMobile";
 
 // import './App.css';
 
@@ -31,6 +32,11 @@ function App() {
             exact
             path={URLPathConstant.SHOW_ALL_MOBILES_URL_PATH}
             component={ShowAllMobiles}
+          />
+          <Route
+            exact
+            path={URLPathConstant.UPDATE_MOBILE_URL_PATH}
+            component={UpdateMobile}
           />
           <Route exact path={URLPathConstant.HOME_URL_PATH} component={Home} />
           <Route
